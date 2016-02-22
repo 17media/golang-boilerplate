@@ -1,0 +1,24 @@
+hash: fd1e15aa6c2898750b83ac5051fa714e85244d425da095be6375763fe21de089
+updated: 2016-02-22T18:44:56.901173794+08:00
+imports:
+- name: code.google.com/p/go.crypto
+  version: ""
+  subpackages:
+  - /bcrypt
+- name: github.com/codegangsta/negroni
+  version: c7477ad8e330bef55bf1ebe300cf8aa67c492d1b
+- name: github.com/dimfeld/httppath
+  version: c8e499c3ef3c3e272ed8bdcc1ccf39f73c88debc
+  repo: https://github.com/dimfeld/httppath
+- name: github.com/dimfeld/httptreemux.git
+  version: 25b5c5c1171b178c6df897f2043af4f72f488225
+- name: github.com/golang/glog
+  version: 23def4e6c14b4da8ac2ed8007337bc5eb5007998
+- name: gopkg.in/mgo.v2
+  version: d90005c5262a3463800497ea5a89aed5fe22c886
+  subpackages:
+  - bson
+- name: gopkg.in/tomb.v2
+  version: 14b3d72120e8d10ea6e6b7f87f7175734b1faab8
+  repo: https://gopkg.in/tomb.v2
+devImports: []

@@ -1,34 +1,25 @@
 package main
 
 import (
+	"github.com/codegangsta/negroni"
+	"github.com/dimfeld/httptreemux.git"
 	"net/http"
-	"github.com/labstack/echo"
-	mw "github.com/labstack/echo/middleware"
 )
 
 // Handler
 func hello(c *echo.Context) error {
-    return c.String(http.StatusOK, "Hello, World!\n")
+	return c.String(http.StatusOK, "Hello, World!\n")
 }
 
 func main() {
-	// Echo instance
-	e := echo.New()
+	router = httptreemux.New()
+	api := router.NewGroup("/api/v1")
+	api.GET("/foo", hello) // becomes /api/v1/foo
 
 	// Middleware
-	e.Use(mw.Logger())
-	e.Use(mw.Recover())
-    e.Use(mw.BasicAuth(func(usr, pwd string) bool {
-		if usr == "joe" && pwd == "secret" {
-			return true
-		}
-		return false
-	}))
-
-
-	// Routes
-	e.Get("/", hello)
+	n := negroni.Classic()
+	n.UseHandler(router)
 
 	// Start server
-	e.Run(":1323")
+	n.Run(":3000")
 }

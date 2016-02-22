@@ -1,0 +1,26 @@
+# top-most EditorConfig file
+root = true
+
+# Global settings
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+trim_trailing_whitespace = true
+indent_style = tab
+indent_size = 8
+
+# JS
+[*.js]
+
+# Go
+[*.go]
+
+# Dockerfile
+[Dockerfile]
+
+# Docker compose
+[docker-compose.yml]
+
+# Others
+[{package.json,.travis.yml, glide.yaml}]

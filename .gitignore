@@ -1,2 +1,2 @@
-Godeps/_workspace
-Godeps/Readme
+.DS_Store
+vendor
