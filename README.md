@@ -16,11 +16,12 @@ A boilerplate application for building backend service using go.
 - `main.go` - app start from here
 
 ## Dependencies
-1. run `brew install glide`
+1. run `go get github.com/tools/godep`
 2. append `export GO15VENDOREXPERIMENT=1` in your `.zshrc`, `.bashrc`, `.bash_profile` or `.profile`
-3. run `glide install`
-4. `go build`
-5. `glide up`
+3. run `godep restore`
+4. run `go install`
+5. `go build`
+6. execute the binary
 
 **make sure you have GOPATH set up properly**
 
