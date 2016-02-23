@@ -1,0 +1,16 @@
+{
+	"ImportPath": "github.com/17media/golang-boilerplate",
+	"GoVersion": "go1.5",
+	"Deps": [
+		{
+			"ImportPath": "github.com/codegangsta/negroni",
+			"Comment": "v0.1-70-gc7477ad",
+			"Rev": "c7477ad8e330bef55bf1ebe300cf8aa67c492d1b"
+		},
+		{
+			"ImportPath": "github.com/julienschmidt/httprouter",
+			"Comment": "v1.1-29-g77366a4",
+			"Rev": "77366a47451a56bb3ba682481eed85b64fea14e8"
+		}
+	]
+}
