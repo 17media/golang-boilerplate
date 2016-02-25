@@ -1,6 +1,7 @@
 package main
 
 import (
+    "os"
     "fmt"
     "github.com/codegangsta/negroni"
     "github.com/julienschmidt/httprouter"
@@ -8,7 +9,7 @@ import (
 )
 
 func Index(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
-    fmt.Fprint(w, "Welcome!\n")
+    fmt.Fprint(w, "WelWWWW111come1111!\n")
 }
 
 // Handler
@@ -26,5 +27,5 @@ func main() {
     n.UseHandler(router)
 
     // Start server
-    n.Run(":3000")
+    n.Run(":" + os.Getenv("PORT"))
 }

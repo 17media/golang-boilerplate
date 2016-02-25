@@ -2,7 +2,6 @@
 
 A boilerplate application for building backend service using go.
 
-
 ## Folder structure
 - `controllers/` - defines your app routes and their logic
 - `utils/` - code and functionality to be shared by different parts of the project
@@ -25,8 +24,13 @@ A boilerplate application for building backend service using go.
 
 **make sure you have GOPATH set up properly**
 
+## Run with Docker
+```
+docker run -v `pwd`:/go/src/app -e "dev=1" -p 3000:3000 --name="test" boilerplate`
+-e dev=1 to turn on dev mode
+```
+
 ## Note
-- To add new dependency, run `glide get github.com/Masterminds/cookoo`
 - please put `_test.go` files adjacent to the file, e.g. `controllers/index.go` will have `controllers/index_test.go` for testing
 
 ## Todo
