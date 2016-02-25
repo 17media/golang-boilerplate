@@ -9,11 +9,11 @@ import (
 )
 
 type User struct {
-  ID bson.ObjectId `bson:"_id,omitempty"`
-  Email string `bson:"e"`
-  Username string `bson:"u"`
-  Password []byte  `bson:"p"`
-  Timestamp time.Time `bson:"t"`
+	ID bson.ObjectId `bson:"_id,omitempty"`
+	Email string `bson:"e"`
+	Username string `bson:"u"`
+	Password []byte  `bson:"p"`
+	Timestamp time.Time `bson:"t"`
 }
 
 func (user *User) HashPassword(password string) {
