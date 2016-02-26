@@ -6,6 +6,7 @@ import (
     "github.com/codegangsta/negroni"
     "github.com/julienschmidt/httprouter"
     "net/http"
+    "github.com/facebookgo/grace/gracehttp"
 )
 
 func Index(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
@@ -27,5 +28,10 @@ func main() {
     n.UseHandler(router)
 
     // Start server
-    n.Run(":" + os.Getenv("PORT"))
+    gracehttp.Serve(
+        &http.Server{
+            Addr: ":" + os.Getenv("PORT"),
+            Handler: n,
+        },
+    )
 }
