@@ -24,7 +24,7 @@ ENTRYPOINT ["./docker-entrypoint.sh"]
 ENV PORT 8080
 
 # Expose port 8080 to the host so we can access our application
-EXPOSE 3000
+EXPOSE 3000 # this is only for development mode
 
 EXPOSE 8080
 
