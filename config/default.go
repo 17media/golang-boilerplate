@@ -15,7 +15,7 @@ func main() {
         viper.setDefault("MONGO_URL", "localhost/test")
         
         // Cache Section
-        viper.setDefault("REDIS_URL", "redis://localhost:6379/test")
+        viper.setDefault("REDIS_URL", "localhost:6379/test")
         
         
         viper.AutomaticEnv()
