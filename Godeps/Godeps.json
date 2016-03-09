@@ -3,14 +3,118 @@
 	"GoVersion": "go1.5",
 	"Deps": [
 		{
+			"ImportPath": "github.com/BurntSushi/toml",
+			"Comment": "v0.1.0-46-gbbd5bb6",
+			"Rev": "bbd5bb678321a0d6e58f1099321dfa73391c1b6f"
+		},
+		{
 			"ImportPath": "github.com/codegangsta/negroni",
 			"Comment": "v0.1-70-gc7477ad",
 			"Rev": "c7477ad8e330bef55bf1ebe300cf8aa67c492d1b"
 		},
 		{
+			"ImportPath": "github.com/facebookgo/clock",
+			"Rev": "600d898af40aa09a7a93ecb9265d87b0504b6f03"
+		},
+		{
+			"ImportPath": "github.com/facebookgo/grace/gracehttp",
+			"Rev": "053ab5d25436faedf3fe76fbf3da797c8c27c659"
+		},
+		{
+			"ImportPath": "github.com/facebookgo/grace/gracenet",
+			"Rev": "053ab5d25436faedf3fe76fbf3da797c8c27c659"
+		},
+		{
+			"ImportPath": "github.com/facebookgo/httpdown",
+			"Rev": "1fa03998d20119dfe4ef73f56a638d83048052e2"
+		},
+		{
+			"ImportPath": "github.com/facebookgo/stats",
+			"Rev": "1b76add642e42c6ffba7211ad7b3939ce654526e"
+		},
+		{
+			"ImportPath": "github.com/hashicorp/hcl",
+			"Rev": "71c7409f1abba841e528a80556ed2c67671744c3"
+		},
+		{
+			"ImportPath": "github.com/hashicorp/hcl/hcl/ast",
+			"Rev": "71c7409f1abba841e528a80556ed2c67671744c3"
+		},
+		{
+			"ImportPath": "github.com/hashicorp/hcl/hcl/parser",
+			"Rev": "71c7409f1abba841e528a80556ed2c67671744c3"
+		},
+		{
+			"ImportPath": "github.com/hashicorp/hcl/hcl/scanner",
+			"Rev": "71c7409f1abba841e528a80556ed2c67671744c3"
+		},
+		{
+			"ImportPath": "github.com/hashicorp/hcl/hcl/strconv",
+			"Rev": "71c7409f1abba841e528a80556ed2c67671744c3"
+		},
+		{
+			"ImportPath": "github.com/hashicorp/hcl/hcl/token",
+			"Rev": "71c7409f1abba841e528a80556ed2c67671744c3"
+		},
+		{
+			"ImportPath": "github.com/hashicorp/hcl/json/parser",
+			"Rev": "71c7409f1abba841e528a80556ed2c67671744c3"
+		},
+		{
+			"ImportPath": "github.com/hashicorp/hcl/json/scanner",
+			"Rev": "71c7409f1abba841e528a80556ed2c67671744c3"
+		},
+		{
+			"ImportPath": "github.com/hashicorp/hcl/json/token",
+			"Rev": "71c7409f1abba841e528a80556ed2c67671744c3"
+		},
+		{
 			"ImportPath": "github.com/julienschmidt/httprouter",
 			"Comment": "v1.1-29-g77366a4",
 			"Rev": "77366a47451a56bb3ba682481eed85b64fea14e8"
+		},
+		{
+			"ImportPath": "github.com/kr/pretty",
+			"Comment": "go.weekly.2011-12-22-27-ge6ac2fc",
+			"Rev": "e6ac2fc51e89a3249e82157fa0bb7a18ef9dd5bb"
+		},
+		{
+			"ImportPath": "github.com/kr/text",
+			"Rev": "bb797dc4fb8320488f47bf11de07a733d7233e1f"
+		},
+		{
+			"ImportPath": "github.com/magiconair/properties",
+			"Comment": "v1.6.0-5-g497d0af",
+			"Rev": "497d0afefddf378f9ffb3c89db6a326985908519"
+		},
+		{
+			"ImportPath": "github.com/mitchellh/mapstructure",
+			"Rev": "d2dd0262208475919e1a362f675cfc0e7c10e905"
+		},
+		{
+			"ImportPath": "github.com/spf13/cast",
+			"Rev": "ee7b3e0353166ab1f3a605294ac8cd2b77953778"
+		},
+		{
+			"ImportPath": "github.com/spf13/jwalterweatherman",
+			"Rev": "d00654080cddbd2b082acaa74007cb94a2b40866"
+		},
+		{
+			"ImportPath": "github.com/spf13/pflag",
+			"Rev": "7f60f83a2c81bc3c3c0d5297f61ddfa68da9d3b7"
+		},
+		{
+			"ImportPath": "github.com/spf13/viper",
+			"Rev": "c975dc1b4eacf4ec7fdbf0873638de5d090ba323"
+		},
+		{
+			"ImportPath": "gopkg.in/fsnotify.v1",
+			"Comment": "v1.2.10",
+			"Rev": "875cf421b32f8f1b31bd43776297876d01542279"
+		},
+		{
+			"ImportPath": "gopkg.in/yaml.v2",
+			"Rev": "a83829b6f1293c91addabc89d0571c246397bbf4"
 		}
 	]
 }

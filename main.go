@@ -2,17 +2,17 @@ package main
 
 import (
 	"fmt"
+	"github.com/17media/golang-boilerplate/settings"
 	"github.com/codegangsta/negroni"
 	"github.com/facebookgo/grace/gracehttp"
 	"github.com/julienschmidt/httprouter"
-	config "github.com/spf13/viper"
+	"github.com/spf13/viper"
 	"net/http"
-	"os"
 )
 
 // Index function
 func Index(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
-	fmt.Fprint(w, "WelWWWW111come1111!\n")
+	fmt.Fprint(w, viper.GetBool("DEBUG"))
 }
 
 // Hello function
@@ -21,11 +21,12 @@ func Hello(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
 }
 
 func main() {
+	settings.InitSettings()
+
 	router := httprouter.New()
 	router.GET("/", Index)
 	router.GET("/hello/:name", Hello)
 
-	User.hashPassword
 	// Middleware
 	n := negroni.Classic()
 	n.UseHandler(router)
@@ -33,7 +34,7 @@ func main() {
 	// Start server
 	gracehttp.Serve(
 		&http.Server{
-			Addr:    ":" + os.Getenv("PORT"),
+			Addr:    ":" + viper.GetString("PORT"),
 			Handler: n,
 		},
 	)
